@@ -1,0 +1,24 @@
+.tile {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+}
+
+.tile__circle {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.column {
+    display: inline-block;
+    width: 82px;
+}
+
+.column:hover {
+    background-color: #F0F0F0;
+}
