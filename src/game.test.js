@@ -5,7 +5,6 @@ it('transitions properly on a move', () => {
 
   game = Game.move(game, 0)
   
-  expect(game.board[0][0]).toBe('red')
   expect(game.current_player).toBe('black')
   expect(game.next_player).toBe('red')
 })

@@ -37,3 +37,16 @@ it('may not contain a streak', () => {
   board[0][0] = 1
   expect(Board.find_streak(board,2)).toBeFalsy()
 })
+
+it('may have a full column', () => {
+  var board = Board.empty_board(2,2)
+  board[0][0] = 1
+  board[0][1] = 1
+  expect(Board.column_is_full(board, 0)).toBe(true)
+})
+
+it('can have discs dropped into it', () => {
+  var board = Board.empty_board(2,2)
+  board = Board.drop_disc(board, 0, 'red')
+  expect(board[0][0]).toBe('red')
+})
