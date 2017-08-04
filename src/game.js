@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import * as Board from './board'
 import AISelector from './ai'
 
@@ -60,6 +61,14 @@ function Status(props) {
 }
 
 class ConnectGame extends Component {
+  static propTypes = {
+    rows: PropTypes.number
+    ,columns: PropTypes.number
+    ,streakSize: PropTypes.number
+    ,player1Color: PropTypes.string
+    ,player2Color: PropTypes.string
+  }
+
   constructor(props) {
     super(props)
 
