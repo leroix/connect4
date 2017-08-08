@@ -32,12 +32,12 @@ function indices_to_board_values(board, indices) {
 }
 
 function find_streak(board, streak_size, color) {
-  // Iterates through each spot on the board and determines of if streak of size
+  // Iterates through each spot on the board and determines if a streak of size
   // streak_size originates from each spot. If a color is provided then it only
   // returns a streak of the given color.
   //
   // This could be more efficient since
-  // there's double checking going on, but the sizes of boards is small enough
+  // there's double checking going on, but the sizes of boards are small enough
   // that it isn't noticeable.
   //
   // returns an array of 2D indices [[1,2], [1,3], ...]
